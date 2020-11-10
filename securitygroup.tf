@@ -19,7 +19,7 @@ resource "aws_security_group" "ecs-securitygroup" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["108.16.30.182/32"]
+    cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
     Name = "ecs"
